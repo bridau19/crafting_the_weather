@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  display: flex;
+}
+
+h2,
+option {
+  font-family: "Fugaz One", sans-serif;
+  font-size: 3em;
+  margin: 3vh;
+}
+
+p,
+label {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: lighter;
+  margin: 5vh 3vh 0 3vh;
+}
+label {
+  font-size: 1.5em;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 10vh 0 0 2vw;
+}
+
+#feeling {
+  padding: 0.5vh 3vw 0.5vh 3vw;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0 1vw 0 0;
+}
+
+input[type="submit"] {
+  background-color: #454457;
+  font-family: "Fugaz One", sans-serif;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 8%;
+  color: white;
+  padding: 1vh;
+  text-decoration: none;
+  cursor: pointer;
+}

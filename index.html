@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="p5.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div id="p5sketch">
+        <!-- p5 instance will be created here -->
+      </div>
+      <div class="text">
+        <h2>
+          Today is a
+          <span id="weather">Loading...</span>
+          day,
+        </h2>
+        <div>
+          <label for="feeling">but I'm feeling:</label>
+          <select id="feeling" name="feeling">
+            <option value="5"></option>
+            <option value="0">bright</option>
+            <option value="1">chaotic</option>
+            <option value="2">dreary</option>
+            <option value="3">hexagonal</option>
+            <option value="4">wispy</option>
+          </select>
+          <input type="submit" id="submit" onclick="getWeather()" />
+        </div>
+
+        <p>
+          The tempurature is
+          <span id="temp">Loading...</span>
+          °F
+
+        </p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
