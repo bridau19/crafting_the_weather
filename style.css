@@ -5,7 +5,10 @@
 }
 
 .main-container {
+  position: relative;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h2,
@@ -48,4 +51,25 @@ input[type="submit"] {
   padding: 1vh;
   text-decoration: none;
   cursor: pointer;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 3;
+}
+
+.box {
+  position: absolute;
+  border-radius: 2vh;
+  background: #e4ebf0;
+  padding: 2vw;
+  z-index: 2;
+}
+
+#p5sketch {
+  position: relative;
+  z-index: 0;
 }

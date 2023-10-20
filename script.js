@@ -65,7 +65,7 @@ async function getWeather() {
       let y = w / 2;
 
       sketch.setup = () => {
-        sketch.createCanvas(w, w);
+        sketch.createCanvas(sketch.windowWidth, sketch.windowHeight);
       };
 
       sketch.draw = () => {
@@ -94,7 +94,7 @@ async function getWeather() {
       let w = sketch.min(sketch.windowWidth, sketch.windowHeight);
 
       sketch.setup = () => {
-        sketch.createCanvas(w, w);
+        sketch.createCanvas(sketch.windowWidth, sketch.windowHeight);
       };
 
       sketch.draw = () => {
@@ -169,7 +169,7 @@ async function getWeather() {
       }
 
       sketch.setup = () => {
-        sketch.createCanvas(w, w);
+        sketch.createCanvas(sketch.windowWidth, sketch.windowHeight);
 
         for (let i = 0; i < rainDrops; i++) {
           rainDrop[i] = new Rain();
@@ -198,12 +198,12 @@ async function getWeather() {
       let hexy = 200;
       let hexSpeedX = 1;
       let hexSpeedY = 1;
-      let gridWidth = w;
-      let gridHeight = w;
+      let gridWidth = sketch.windowWidth;
+      let gridHeight = sketch.windowHeight;
       let hexagonSize = w / 10;
 
       sketch.setup = () => {
-        sketch.createCanvas(w, w);
+        sketch.createCanvas(sketch.windowWidth, sketch.windowHeight);
       };
 
       function makeGrid() {
@@ -284,7 +284,7 @@ async function getWeather() {
       let w = sketch.min(sketch.windowWidth, sketch.windowHeight);
 
       sketch.setup = () => {
-        sketch.createCanvas(w, w);
+        sketch.createCanvas(sketch.windowWidth, sketch.windowHeight);
       };
 
       sketch.draw = () => {
